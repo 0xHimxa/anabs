@@ -1,65 +1,80 @@
+import "./general.css";
 import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+    <div className="bg-[#F7F9FC] h-screen w-full flex flex-col ">
+      <div className="bg-[#1A237E] shadow-2xl px-10 py-4 flex justify-between shadow-xl  h-[70px]">
+        <h1 className=" font-bold text-2xl text-[#00E5FF]">ANABS</h1>
+        <nav className="flex gap-7 text-xl text-primary-white-text       h:absolute hover:left-10  ">
+          <a href="" className="hover:text-[#00E5FF]  px-4">
+            Benefits
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <a href="" className="hover:text-link-hover-color  px-4">
+           Testimonials
           </a>
+          <a href="" className="hover:text-link-hover-color  px-4">
+            About
+          </a>
+
+          <a className="hover:text-link-hover-color px-4">Login</a>
+        </nav>
+      </div>
+
+      <section className="flex flex-col justify-center items-center flex-grow gap-4">
+        <Image src="/sale.png" alt="sale image" width={100} height={100} />
+        <h1 className="text-xl text-[#1E293B] font-bold">
+          Maximize Profit Per Bottle. Minimize Delivery Waste.
+        </h1>
+        <div className=" text-lg text-[#64748B]">
+          Anabs uncovers seasonal sales trends, optimizes delivery routes, and
+          tracks reusable assets so you can scale efficiently.
         </div>
-      </main>
+        <a
+          href=""
+          className="bg-[#FFD700] text-[#441C55] over:text-link-hover-color pr-5 pl-5 pt-4 pb-4 rounded shadow-2xl font-bold"
+        >
+          Get Started Free
+        </a>
+      </section>
+
+      <section className="flex-grow">
+        <h1 className="text-center text-xl font-bold mb-6">
+          {" "}
+          Testimonials From Our Customers
+        </h1>
+        <div className="grid grid-cols-2 gap-10 px-4">
+          <div className="bg-[#1F2633] flex flex-col gap-4 px-6 py-5 rounded shadow-3xl">
+            <div className="text-gray-300">
+              "Anabs gave us the first clear view of our true sales
+              profitability by delivery route. We cut three high-cost routes
+              that were barely breaking even and focused resources on the top
+              performers. Our net profit per truck run has increased by 15%
+              since implementation. It’s essential for our distribution
+              strategy."
+            </div>
+            <p className="text-white  text-sm ">
+            <strong>  — Hamza S.</strong>, production Manager 
+            <strong className="pl-1">Asipita Beverage Ltd.</strong></p>
+          </div>
+
+          <div className="bg-[#1F2633] flex flex-col gap-4 px-6 py-5 rounded shadow-3xl">
+            <div className="text-gray-300">
+              "Anabs gave us the first clear view of our true sales
+              profitability by delivery route. We cut three high-cost routes
+              that were barely breaking even and focused resources on the top
+              performers. Our net profit per truck run has increased by 15%
+              since implementation. It’s essential for our distribution
+              strategy."
+            </div>
+            <p className="text-white text-sm ">
+            <strong>  — Pauly C.</strong>, Nazifi Manager <strong> Jafmas Beverage Ltd.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* <footer>
+        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+      </footer> */}
     </div>
   );
 }
