@@ -1,3 +1,5 @@
+'use client'
+
 import "./general.css";
 import Image from "next/image";
 export default function Home() {
@@ -5,7 +7,7 @@ export default function Home() {
     <div className="bg-[#F7F9FC] h-screen w-full flex flex-col ">
       <div className="bg-[#1A237E] shadow-2xl px-10 py-4 flex justify-between shadow-xl  h-[70px]">
         <h1 className=" font-bold text-2xl text-[#00E5FF]">ANABS</h1>
-        <nav className="flex gap-7 text-xl text-primary-white-text       h:absolute hover:left-10  ">
+        <nav className="flex gap-7 text-xl text-primary-white-text   nav-name       ">
           <a href="" className="hover:text-[#00E5FF]  px-4">
             Benefits
           </a>
@@ -20,12 +22,12 @@ export default function Home() {
         </nav>
       </div>
 
-      <section className="flex flex-col justify-center items-center flex-grow gap-4">
+      <section className="flex flex-col justify-center items-center flex-grow gap-4 section1">
         <Image src="/sale.png" alt="sale image" width={100} height={100} />
         <h1 className="text-xl text-[#1E293B] font-bold">
           Maximize Profit Per Bottle. Minimize Delivery Waste.
         </h1>
-        <div className=" text-lg text-[#64748B]">
+        <div className=" text-lg text-[#64748B] ">
           Anabs uncovers seasonal sales trends, optimizes delivery routes, and
           tracks reusable assets so you can scale efficiently.
         </div>
@@ -42,7 +44,7 @@ export default function Home() {
           {" "}
           Testimonials From Our Customers
         </h1>
-        <div className="grid grid-cols-2 gap-10 px-4">
+        <div className="grid grid-cols-2 gap-10 px-4 test-mom">
           <div className="bg-[#1F2633] flex flex-col gap-4 px-6 py-5 rounded shadow-3xl">
             <div className="text-gray-300">
               "Anabs gave us the first clear view of our true sales

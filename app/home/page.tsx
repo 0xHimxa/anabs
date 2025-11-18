@@ -1,4 +1,4 @@
-"use client"
+
 import '../general.css'
 
 export default  function Home(){
