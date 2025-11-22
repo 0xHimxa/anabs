@@ -33,13 +33,13 @@ export default function Home() {
         </div>
         <a
           href=""
-          className="bg-[#FFD700] text-[#441C55] over:text-link-hover-color pr-5 pl-5 pt-4 pb-4 rounded shadow-2xl font-bold"
+          className="bg-[#FFD700] text-[#441C55] hover:text-link-hover-color pr-5 pl-5 pt-4 pb-4 rounded shadow-2xl font-bold a-href"
         >
           Get Started Free
         </a>
       </section>
 
-      <section className="flex-grow">
+      <section className="flex-grow section2">
         <h1 className="text-center text-xl font-bold mb-6">
           {" "}
           Testimonials From Our Customers
