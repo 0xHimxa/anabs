@@ -1,6 +1,8 @@
 'use client'
 
 import "./general.css";
+import "./f-home.css";
+
 import Image from "next/image";
 export default function Home() {
   return (
@@ -18,7 +20,7 @@ export default function Home() {
             About
           </a>
 
-          <a className="hover:text-link-hover-color px-4">Login</a>
+          <a href="login" className="hover:text-link-hover-color px-4">Login</a>
         </nav>
       </div>
 
