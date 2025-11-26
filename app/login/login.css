@@ -1,0 +1,86 @@
+@media(max-width: 650px){
+.input-box{
+padding: 5px;
+
+}
+.google-box{
+    margin-left: 50px;
+}
+
+}
+
+@media(max-width: 600px){
+
+.login-box{
+    margin-left: 10px;
+    padding: 30px;
+}
+
+}
+
+
+@media(max-width: 500px){
+
+.login-box{
+    margin-left: 10px;
+    padding: 30px;
+}
+
+.after-form-input{
+font-size: 13px;
+}
+.after-form-input span{
+font-size: 13px;
+
+}
+
+
+}
+
+
+@media(max-width: 480px){
+
+.google-box{
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+form{
+    height: 45%;
+}
+
+}
+
+@media(max-width: 454px){
+
+.google-box{
+    margin-left: 10px;
+    width: 90%;
+  
+}
+.google-box span{
+    font-size: 15px;
+}
+.create-acc span{
+font-size: 16px;
+}
+
+.input-box input{
+    font-size: 16px;
+
+}
+
+}
+
+
+@media(min-width: 1000px){
+
+
+    .login-box{
+
+        width: 50%;
+    }
+}
+
+
+
